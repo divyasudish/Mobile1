@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 mTaskService.uploadTask(edit.getText().toString().trim(), new Callback<String>() {
                     @Override
                     public void success(String s, Response response) {
-
+                        edit.setText(" ");
                     }
 
                     @Override
